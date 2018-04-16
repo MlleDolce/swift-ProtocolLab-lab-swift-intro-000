@@ -40,7 +40,7 @@ class ShipSpec: QuickSpec {
                 
                 var myLoveBoat = LoveBoat()
                 
-                myLoveBoat.steerInDirection(.west)
+                myLoveBoat.steerInDirection(direction: .west)
                 
                 expect(myLoveBoat.direction).to(equal(Direction.west))
                 
@@ -52,7 +52,7 @@ class ShipSpec: QuickSpec {
                 
                 var mySailBoat = SailBoat()
                 
-                mySailBoat.steerInDirection(.east)
+                mySailBoat.steerInDirection(direction: .east)
                 
                 expect(mySailBoat.direction).to(equal(Direction.east))
                 
@@ -64,7 +64,7 @@ class ShipSpec: QuickSpec {
                 
                 var myRowBoat = RowBoat()
                 
-                myRowBoat.steerInDirection(.south)
+                myRowBoat.steerInDirection(direction: .south)
                 
                 expect(myRowBoat.direction).to(equal(Direction.south))
                 
@@ -76,7 +76,7 @@ class ShipSpec: QuickSpec {
                 
                 var mySteamBoat = SteamBoat()
                 
-                mySteamBoat.steerInDirection(.west)
+                mySteamBoat.steerInDirection(direction: .west)
                 
                 expect(mySteamBoat.direction).to(equal(Direction.west))
                 
